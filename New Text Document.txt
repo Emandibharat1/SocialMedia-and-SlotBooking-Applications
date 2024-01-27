@@ -1,0 +1,16 @@
+use social_media;
+create table users (
+	id integer primary key auto_increment,
+	name varchar(50),
+	profile varchar(50),
+	password varchar(50),
+	headline varchar(100), 
+	token varchar(50)
+);
+
+create table posts (
+	profile varchar(50),
+    content varchar(5000),
+    likes integer,
+    shares integer
+);
